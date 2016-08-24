@@ -26,10 +26,4 @@ _testmain.go
 *.prof
 
 .gitignore
-.idea/.name
-.idea/compiler.xml
-.idea/copyright/
-.idea/libraries/
-.idea/misc.xml
-.idea/modules.xml
-.idea/workspace.xml
+.idea/
