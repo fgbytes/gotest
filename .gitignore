@@ -33,5 +33,3 @@ _testmain.go
 .idea/misc.xml
 .idea/modules.xml
 .idea/workspace.xml
-devtest.iml
-test.go
