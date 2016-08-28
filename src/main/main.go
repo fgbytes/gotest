@@ -1,9 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"net/http"
+)
+
+func index(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-type", "text/plain")
+	w.Write([]byte("Hello World!!!"))
+}
 
 func main() {
+	http.HandleFunc("/", index)
 
-	fmt.Print("QWER")
-	fmt.Print("QrWER")
+	http.ListenAndServe(":80", nil)
 }
